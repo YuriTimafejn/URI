@@ -12,11 +12,14 @@ Saída
 Imprima o tempo lido no arquivo de entrada (segundos), convertido para horas:minutos:segundos, conforme exemplo fornecido.
 */
 int main (void){
-    int N, hr = 0, min = 0, sec = 0;
+    int N, hr = 0, min = 0, sec ;
     scanf("%d", &N);
 
+    hr = N / 3600;
+    min =  N % 3600 / 60;
+    sec = N % 60;
 
-    printf("%d:%d:%d", hr, min, sec);
+    printf("%d:%d:%d\n", hr, min, sec);
 
     return 0;
 }
