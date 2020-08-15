@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 int main(){
-    float valor;
+    double valor;
     int div;
 
-    scanf("%f", &valor);
+    scanf("%lf", &valor);
     ///// NOTAS
     printf("NOTAS:\n");
     div = (valor/100);
@@ -44,8 +44,8 @@ int main(){
     div = (valor/5);
     valor = valor - (div*5);
     printf("%d moeda(s) de R$ 0.05\n", div);
-    div = (valor/1);
-    printf("%d moeda(s) de R$ 1.00\n", div);
+    div = valor / 1;
+    printf("%d moeda(s) de R$ 0.01\n", div);
 
     return 0;
 }
