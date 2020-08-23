@@ -52,7 +52,7 @@ int beto (int x, int y){ // Beto escolheu a função b(x, y) = 2(x²) + (5y)².
 void resultado(int beto, int carl, int rafa){
 	if((beto > carl) && (beto > rafa)){
 		printf("Beto ganhou\n");
-	}else if((carl > beto) && (carl > rafa)){
+	}else if(carl > rafa){
 		printf("Carlos ganhou\n");
 	}else{
 		printf("Rafael ganhou\n");
