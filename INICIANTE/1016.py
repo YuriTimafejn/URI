@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+
+'''
+Dois carros (X e Y) partem em uma mesma direção.
+O carro X sai com velocidade constante de 60 Km/h e
+o carro Y sai com velocidade constante de 90 Km/h.
+Em uma hora (60 minutos) o carro Y consegue se
+distanciar 30 quilômetros do carro X, ou seja,
+consegue se afastar um quilômetro a cada 2 minutos.
+Leia a distância (em Km) e calcule quanto tempo leva
+(em minutos) para o carro Y tomar essa distância
+do outro carro.
+Entrada
+O arquivo de entrada contém um número inteiro.
+Saída
+Imprima o tempo necessário seguido da mensagem "minutos".
+'''
+
+entrada = int(input())
+# A entrada é um valor em minutos, a cada 2 minutos a distancia aumenta em 1Km
+# então a saida é a entrada multiplicada por 2
+entrada = entrada * 2
+
+print('{} minutos'.format(entrada))
