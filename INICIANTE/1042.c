@@ -37,7 +37,7 @@ int main (void){
 	}
 	
 	printf("%d\n%d\n%d\n\n", temp3, temp2, temp1);
-	printf("\%d\n%d\n%d\n", a, b, c);
+	printf("%d\n%d\n%d\n", a, b, c);
 
 	return 0;
 }
